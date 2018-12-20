@@ -1,11 +1,11 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
+  "description": "building my own website",
   "main": "index.js",
   "scripts": {
 	"watch-sass": "sass --watch sass/style.scss:css/style.css"
 },
-  "author": "",
+  "author": "Graeme",
   "license": "ISC"
 }

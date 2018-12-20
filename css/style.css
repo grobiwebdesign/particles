@@ -37,8 +37,8 @@ h4 {
   line-height: 1.25em;
   font-weight: 300; }
 
-/* first */
-.parallax_1 {
+/* hero banner */
+.hero {
   background: #f1f1f1;
   height: 100%; }
 
@@ -50,6 +50,7 @@ h4 {
   top: 50%;
   transform: translate(-50%, -50%);
   color: #164693;
+  text-shadow: 0 0 8px #fff;
   text-transform: uppercase; }
 
 hr {
