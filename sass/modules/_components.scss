@@ -1,6 +1,6 @@
-/* first */
+/* hero banner */
 
-.parallax_1{
+.hero{
 	background:$light-grey;
 	height:100%;
 }
@@ -13,6 +13,7 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 	color:$primary;
+	text-shadow: 0 0 8px $white;
 	text-transform: uppercase;
 }
 
