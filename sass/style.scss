@@ -2,12 +2,13 @@
 
 @import 'base/_variables.scss';
 @import 'base/_base.scss';
+@import 'base/_media_queries.scss';
 @import 'base/_mixins.scss';
 
 
 /* Layout files */
 
-
+@import 'layouts/_navbar.scss';
 
 /* Module files */
 
