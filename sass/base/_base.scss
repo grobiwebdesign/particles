@@ -5,22 +5,42 @@ html, body {
 	padding: 0;
 }
 
-.scrolldown {
+/* Call to Action on landing page */
+
+.call_to_action {
+	display: block;
 	position: relative;
-	border-radius: 50px;
 	width: 80px;
 	height: 80px;
 	left: 50%;
-	//border: 2px solid black;
+	border-radius: 50px;
+	background: white;
+	transform: translateX(-50%);
+-webkit-box-shadow: 0px 0px 16px 0px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 16px 0px rgba(255,255,255,1);
+box-shadow: 0px 0px 16px 0px rgba(255,255,255,1);
+}
+
+.arrow{
+	position: absolute;
+	left: 50%;
+	top: 40%;
 	transform: translateX(-50%);
 }
 
-.arrow_down{
-	position: absolute;
-	left: 50%;
-	top: 20%;
-	transform: translateX(-50%);
-	width: 50px;
-	border-radius: 50px;
-	
+@keyframes bounce {
+  0%  { 
+  top: 40%;
+  transform: translate(-50%, 20%);
+  }
+
+  100% { 
+  top: 60%;
+  transform: translate(-50%, 60%);
+  }
+}
+
+.call_to_action{
+	cursor: pointer;
+	//animation: bounce 1s ease infinite;
 }
