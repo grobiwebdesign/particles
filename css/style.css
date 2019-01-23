@@ -9,8 +9,32 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.scrolldown {
+  position: relative;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  border: 2px solid black;
+  transform: translateX(-50%); }
+
+.arrow_down {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 50px;
+  border-radius: 50px; }
+
 /* phones */
 /* Layout files */
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, [col] 33.3%); }
+
+footer div {
+  background: white; }
+
 /* navigation remove underline and bullets*/
 nav {
   background-color: none; }
@@ -135,7 +159,7 @@ hr {
   z-index: -100; }
 
 /* about */
-section {
+footer {
   background: #164693;
   height: 100%; }
 
