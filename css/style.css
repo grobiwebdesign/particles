@@ -108,7 +108,7 @@ nav ul li:hover {
   -webkit-animation: spin_grow 0.24s linear both;
   animation: spin_grow 0.24s linear both; }
 
-/* Animation keyframes */
+/* Animation keyframes cta button*/
 @-webkit-keyframes spin_grow {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
