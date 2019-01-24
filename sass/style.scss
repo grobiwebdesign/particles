@@ -2,15 +2,17 @@
 
 @import 'base/_variables.scss';
 @import 'base/_base.scss';
+@import 'base/_media_queries.scss';
 @import 'base/_mixins.scss';
 
 
 /* Layout files */
 
-
+@import 'layouts/_footer.scss';
+@import 'layouts/_navbar.scss';
 
 /* Module files */
 
-
+@import 'modules/_buttons.scss';
 @import 'modules/typography.scss';
 @import 'modules/components.scss';

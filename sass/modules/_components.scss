@@ -12,9 +12,10 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	color:$primary;
+	color: $primary;
 	text-shadow: 0 0 8px $white;
 	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 hr{
@@ -23,13 +24,12 @@ hr{
 }
 
 #particles-js{
-	background-color: $light-grey;
 	height: 100vh;
 	z-index: -100;
 }
 /* about */
 
-section{
+footer{
 	background: $primary;
 	height: 100%;
 }

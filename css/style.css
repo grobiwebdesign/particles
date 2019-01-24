@@ -9,8 +9,130 @@ html, body {
   margin: 0;
   padding: 0; }
 
+/* phones */
 /* Layout files */
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, [col] 33.3%); }
+
+footer div {
+  background: white; }
+
+/* navigation remove underline and bullets*/
+nav {
+  background-color: none; }
+
+nav a {
+  text-decoration: none;
+  color: #164693; }
+
+/* navigation spacing and alignment*/
+nav ul {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s; }
+
+/* navigation list spacing*/
+nav ul li {
+  display: inline-block;
+  padding: 25px; }
+
+/* style on hover*/
+nav ul li:hover {
+  background-color: #173a4f; }
+
+/* navigation hamburger icon*/
+.handle {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  cursor: pointer;
+  background-color: #173a4f;
+  color: #fff;
+  cursor: pointer;
+  display: none; }
+
+/* navigation hamburger icon on hover*/
+.handle:hover {
+  background-color: #2655a0; }
+
+/*mobile sized screen*/
+@media screen and (max-width: 600px) {
+  /* navigation spacing and alignment-mobile*/
+  nav ul {
+    margin-right: 0px;
+    max-height: 0px; }
+
+  /*allows the dropdown menu to appear*/
+  .show {
+    max-height: 25rem; }
+
+  /* spacing between mobile sized links for better UX
+  
+  nav {
+      margin-top: 7px;
+    }*/
+  /* full width hyperlink button for better UX */
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: left; }
+
+  /* hamburger icon */
+  .handle {
+    font-size: 2.5rem;
+    display: block; } }
 /* Module files */
+/* Call to Action on landing page */
+.call_to_action {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0px auto;
+  border-radius: 50px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 16px 0px white;
+  -moz-box-shadow: 0px 0px 16px 0px white;
+  box-shadow: 0px 0px 16px 0px white; }
+
+/* Spinning animation for cta button */
+.call_to_action:hover .arrow {
+  -webkit-animation: spin_grow 0.24s linear both;
+  animation: spin_grow 0.24s linear both; }
+
+/* Animation keyframes */
+@-webkit-keyframes spin_grow {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0); }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg); } }
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0); }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg); } }
+/* cta arrow icon */
+.arrow {
+  margin-top: 40%; }
+
 body {
   font-family: "Montserrat", sans-serif; }
 
@@ -51,19 +173,19 @@ h4 {
   transform: translate(-50%, -50%);
   color: #164693;
   text-shadow: 0 0 8px #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
 
 hr {
   width: 40px;
   border: 2px solid #164693; }
 
 #particles-js {
-  background-color: #f1f1f1;
   height: 100vh;
   z-index: -100; }
 
 /* about */
-section {
+footer {
   background: #164693;
   height: 100%; }
 

@@ -1,0 +1,8 @@
+footer{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, [col] 33.3% ) ;
+}
+
+footer div{
+	background: white;
+}
