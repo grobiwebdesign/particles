@@ -1,11 +1,11 @@
 {
   "particles":{
     "number":{
-      "value": 12
+      "value": 32
     },
 
     "color":{
-      "value": "#164693"
+      "value": "#ddd"
     },
 
     "move":{
@@ -29,11 +29,11 @@
     },
 
     "size":{
-      "value":160,
+      "value":60,
       "random":true,
       "anim":{
         "enable":true,
-        "speed":1
+        "speed":1.5
       }
     },
 
