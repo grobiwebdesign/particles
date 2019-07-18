@@ -1,0 +1,60 @@
+// Full screen header layout
+
+.hero{
+	width: 100%;
+	height: 100vh;
+	background: #0f1439;
+}
+
+.logo{
+	position: relative;
+	width: 5%;
+}
+
+// for transparent header, should still see particles.js in background
+
+header{
+	content: '';
+	width: 100%;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 1;
+}
+
+// Introduction banner/flyer/graeme robinson...
+
+.banner{
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	color: #fff;
+	text-shadow: 2px 0px 4px (0, 0, 255, 0.5);
+}
+
+// divider between h1 and h3
+
+.separator_header{
+	display: block;
+	background: $white;
+	border-width: 1px;
+	height: 2px;
+	border-radius: 50px;
+	width: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px){
+
+	.logo{
+		position: relative;
+		width: 10%;
+	}
+
+	.separator_header{
+		width: 25%;
+		height: 1.2px;
+	}
+}
