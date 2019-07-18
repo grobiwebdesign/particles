@@ -2,10 +2,10 @@ body{
 	font-family: $body-text;
 }
 
-h1, h2, h3, h4{
+/*h1, h2, h3, h4{
 	margin: 0;
 	padding: 0.5em 0;
-}
+}*/
 
 
 h1{
@@ -52,12 +52,12 @@ h4{
 	}
 
 	h3{
-		font-size:1.37rem;
+		font-size: 1.37rem;
 		line-height: 1.13em;
 	}
 
 	h4{
-		font-size:1.12rem;
+		font-size: 1.12rem;
 		line-height: 1.11em;
 	}
 	
