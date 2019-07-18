@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.row{
+	padding: $padding;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px){
+	.row{
+		padding: $padding_mobile;
+	}
+}

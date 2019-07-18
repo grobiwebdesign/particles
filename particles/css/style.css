@@ -1,0 +1,245 @@
+/* Base files */
+* {
+  margin: 0;
+  padding: 0; }
+
+.row {
+  padding: 16px 32px; }
+
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+  .row {
+    padding: 24px; } }
+/* phones */
+/* Font sizes */
+/* Layout files */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: #0f1439; }
+
+.logo {
+  position: relative;
+  width: 5%; }
+
+header {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.banner {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  color: #fff;
+  text-shadow: 2px 0px 4px 0, 0, 255, 0.5; }
+
+.separator_header {
+  display: block;
+  background: #fff;
+  border-width: 1px;
+  height: 2px;
+  border-radius: 50px;
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+  .logo {
+    position: relative;
+    width: 10%; }
+
+  .separator_header {
+    width: 25%;
+    height: 1.2px; } }
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, [col] 33.3%); }
+
+footer div {
+  background: white; }
+
+/* navigation remove underline and bullets*/
+nav {
+  background-color: none; }
+
+nav a {
+  text-decoration: none;
+  color: #164693; }
+
+/* navigation spacing and alignment*/
+nav ul {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s; }
+
+/* navigation list spacing*/
+nav ul li {
+  display: inline-block;
+  padding: 25px; }
+
+/* style on hover*/
+nav ul li:hover {
+  background-color: #173a4f; }
+
+/* navigation hamburger icon*/
+.handle {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  cursor: pointer;
+  background-color: #173a4f;
+  color: #fff;
+  cursor: pointer;
+  display: none; }
+
+/* navigation hamburger icon on hover*/
+.handle:hover {
+  background-color: #2655a0; }
+
+/*mobile sized screen*/
+@media screen and (max-width: 600px) {
+  /* navigation spacing and alignment-mobile*/
+  nav ul {
+    margin-right: 0px;
+    max-height: 0px; }
+
+  /*allows the dropdown menu to appear*/
+  .show {
+    max-height: 25rem; }
+
+  /* spacing between mobile sized links for better UX
+  
+  nav {
+      margin-top: 7px;
+    }*/
+  /* full width hyperlink button for better UX */
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: left; }
+
+  /* hamburger icon */
+  .handle {
+    font-size: 2.5rem;
+    display: block; } }
+/* Module files */
+/* Call to Action on landing page */
+.call_to_action {
+  margin: 0 auto;
+  display: block;
+  padding: 8px 24px;
+  min-width: 200px;
+  margin-top: 0.5em;
+  background: #fff;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  border: none;
+  /*-webkit-box-shadow: 0px 0px 16px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(255,255,255,1);
+  box-shadow: 0px 0px 16px 0px rgba(255,255,255,1);*/ }
+
+/* Spinning animation for cta button */
+/*.call_to_action:hover .arrow {
+
+	-webkit-animation: spin_grow 0.24s linear both;
+	animation: spin_grow 0.24s linear both;
+}*/
+.call_to_action:hover {
+  cursor: pointer;
+  background: none;
+  color: white;
+  border: 1px solid white; }
+
+/* Animation keyframes cta button*/
+@-webkit-keyframes spin_grow {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0); }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg); } }
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0); }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg); } }
+/* cta arrow icon */
+.arrow {
+  margin-top: 40%; }
+
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+  .call_to_action {
+    width: 60px;
+    height: 60px; }
+
+  .arrow {
+    width: 24px;
+    height: auto; } }
+body {
+  font-family: "Muli", sans-serif; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0.5em 0; }
+
+h1 {
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.05em; }
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.25; }
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.25em; }
+
+h4 {
+  font-size: 1.12rem;
+  line-height: 1.22222222em; }
+
+.body_text {
+  line-height: 1.25em;
+  font-weight: 300; }
+
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+  /* Font sizes Mobile */
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25em; }
+
+  h2 {
+    font-size: 1.62rem;
+    line-height: 1.15em; }
+
+  h3 {
+    font-size: 1.37rem;
+    line-height: 1.13em; }
+
+  h4 {
+    font-size: 1.12rem;
+    line-height: 1.11em; } }
+
+/*# sourceMappingURL=style.css.map */
